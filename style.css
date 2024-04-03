@@ -1,12 +1,12 @@
-/* Base styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for body */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
     background-color: #f0f0f0;
     background-image: url('background-image.jpg');
     background-size: cover;
@@ -16,69 +16,69 @@ body {
 /* Centering the calculator on all screen sizes */
 .container {
     width: auto;
-    max-width: 460px; /* Increased max-width to accommodate longer header text */
+    max-width: 460px; 
     margin: auto;
     padding: 20px;
-    background: #F1EBEA; /* Container background color */
+    background: #F1EBEA;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: table; /* Retain table display for consistent layout */
+    display: table; 
 }
 
-/* Style the header */
+
 header h1, header h2 {
     text-align: center;
     margin: 10px 0;
-    padding: 0 10px; /* Ensure text fits in a single line on narrow screens */
+    padding: 0 10px; 
 }
 
 header h1 {
-    font-size: 16px; /* Adjusted font size for h1 */
+    font-size: 16px; 
 }
 
 header h2 {
-    font-size: 30px; /* Adjusted font size for h2 */
+    font-size: 30px; 
 }
 
-/* Style the form groups as table rows */
+
 .form-group {
-    display: table-row; /* Each form group is a table row */
+    display: table-row; 
 }
 
 .form-group label, .form-group input {
-    display: table-cell; /* Maintain table-cell display for consistent layout */
-    padding: 8px; /* Padding for spacing */
-    vertical-align: middle; /* Vertical alignment */
+    display: table-cell; 
+    padding: 8px; 
+    vertical-align: middle; 
 }
 
 .form-group label {
     font-weight: bold;
-    text-align: right; /* Right align for labels */
-    white-space: nowrap; /* Prevent label wrapping */
+    text-align: right; 
+    white-space: nowrap; 
 }
 
-/* Specifically style the input fields */
+
 .form-group input {
-    background-color: #fff; /* Background color for input fields */
+    background-color: #fff; 
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* Style the text inputs and range slider */
+
 input[type="text"], input[type="range"], input[disabled] {
-    margin-bottom: 8px; /* Space below each input field */
+    margin-bottom: 8px; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 480px) {
     body {
-        display: flex; /* Use flexbox for body */
-        align-items: center; /* Center content vertically */
+        display: flex; 
+        align-items: center;
         justify-content: center; 
     }
     .container {
-        width: auto; /* Adjust the width for smaller screens */
-        margin: 20px auto; /* Centering with top and bottom margin */
+        width: auto; 
+        margin: 20px auto; 
     }
 
 }
